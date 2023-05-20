@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bài tập 1 -->
+    <div style="background-color: rgb(255, 183, 0); text-align: center;">
+        <h1>Bài tập 1: Tuyển sinh</h1>
+        <div>
+            <input type="text" name="" id="benchmarkInput" placeholder="điểm chuẩn" />
+            <input type="text" name="" id="sub1Input" placeholder="điểm Môn 1" />
+            <input type="text" name="" id="sub2Input" placeholder="điểm Môn 2" />
+            <input type="text" name="" id="sub3Input" placeholder="điểm Môn 3" />
+            <select name="" id="areaSelect">
+                <option>Khu vực</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="X">Không</option>
+            </select>
+            <select name="" id="typeSelect">
+                <option>Loại đối tượng</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="X">Không</option>
+            </select>
+            <button id="btnSubmit">Kiểm tra</button>
+            <p>kết quả: thí sinh đã <span id="noticeSpan"></span></p>
+        </div>
+    </div>
+    <!-- bài tập 2 -->
+<div style="background-color: rgb(251, 0, 255); text-align: center;">
+    <h1>Bài tập 2: Tính tiền điện</h1>
+    <div>
+        <input id="nameInput" type="text" placeholder="nhập họ và tên khách hàng">
+        <input id="kwInput" type="text" placeholder="nhập số khối điện tiêu thụ trong tháng">
+        <button id="subElectric">Tính tiền điện</button>
+        <p>Tiền điện trong tháng phải trả của khách hàng <span id="nameSpan"></span> là <span id="sumElectric"></span></p>
+    </div>
+</div>
+<!-- bài tập 3 -->
+<div style="background-color: rgb(0, 94, 255); text-align: center;">
+    <h1>Bài tập 3: Tính thuế thu nhập cá nhân</h1>
+    <div>
+        <input id="nameInput3" type="text" placeholder="nhập tên của bạn">
+        <input id="salaryInput3" type="number" placeholder="nhập tổng thu nhập năm của bạn (triệu vnđ)">
+        <input id="numberDependInput" placeholder="nhập số người phụ thuộc">
+        <button id="subTax">tính thuế</button>
+        <p>Tiền thuế phải đóng của <span id="nameSpan3"></span> là <span id="taxSpan"></span></p>
+    </div>
+</div>
+<!-- bài tập 4 -->
+<div style="background-color: rgb(0, 238, 255); text-align: center;">
+    <h1>Bài tập 4: Tính tiền cáp</h1>
+    <div>
+        <input id="codeInput" type="text" placeholder="hãy nhập mã khách hàng">
+        <input id="nameInput4" type="text" placeholder="hãy nhập tên khách hàng">
+        <select name="customerName" id="customerSelect" onchange="disableConnector()">
+            <option value="">hãy chọn loại hình khách hàng của bạn</option>
+            <option value="private">cá nhân</option>
+            <option value="company">doanh nghiệp</option>
+        </select>
+        <input id="connectorInput" type="number" placeholder="hãy nhập số kết nối">
+        <input id="channelInput" type="number">
+        <button id="subMoneyCab">Tính tiền cáp</button>
+        <p>Tiền cáp của khách hàng <span id="customerSpan"></span> có mã <span id="codeSpan"></span> là <span id="moneyCable"></span></p>
+    </div>
+</div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
